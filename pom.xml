@@ -4,7 +4,7 @@
 
   <groupId>org.sbforge</groupId>
   <artifactId>sbforge-parent</artifactId>
-  <version>6</version>
+  <version>7-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>SBForge Uber POM</name>
@@ -30,9 +30,9 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:svn:https://sbforge.org/svn/sbforge-parent/tags/sbforge-parent-6</connection>
-    <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/tags/sbforge-parent-6</developerConnection>
-    <url>https://sbforge.org/fisheye/browse/Bitmagasinet/tags/sbforge-parent-6</url>
+    <connection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</connection>
+    <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</developerConnection>
+    <url>https://sbforge.org/fisheye/browse/Bitmagasinet</url>
   </scm>
 
   <build>
