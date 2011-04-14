@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.sbforge</groupId>
   <artifactId>sbforge-parent</artifactId>
-  <version>7-SNAPSHOT</version>
+  <version>7</version>
 
   <packaging>pom</packaging>
   <name>SBForge Uber POM</name>
@@ -23,6 +24,9 @@
       <name>SBForgeb Nexus Repo manager</name>
       <url>https://sbforge.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
+    <!-- This needs to be overridden in projects with subproject, where the 
+      (sub)projects typically will be deployed to a common site url based on the 
+      parent projects artifactId -->
     <site>
       <id>sbforge-nexus</id>
       <url>dav:https://sbforge.org/maven/${project.artifactId}/sites/${project.version}</url>
@@ -34,6 +38,31 @@
     <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</developerConnection>
     <url>https://sbforge.org/fisheye/browse/Bitmagasinet</url>
   </scm>
+
+  <repositories>
+    <repository>
+      <id>sbforge-nexus</id>
+      <url>https://sbforge.org/nexus/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>sbforge-nexus</id>
+      <url>https://sbforge.org/nexus/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 
   <build>
     <extensions>
@@ -97,7 +126,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
-              <version>3.0-beta-3</version>          
+              <version>3.0-beta-3</version>
               <configuration>
                 <reportPlugins>
                   <plugin>
