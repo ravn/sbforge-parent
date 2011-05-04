@@ -5,7 +5,7 @@
 
   <groupId>org.sbforge</groupId>
   <artifactId>sbforge-parent</artifactId>
-  <version>7</version>
+  <version>8</version>
 
   <packaging>pom</packaging>
   <name>SBForge Uber POM</name>
@@ -141,15 +141,18 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.7</version>
                     <configuration>
-                      <reportSets>
-                        <reportSet>
-                          <id>html</id>
-                          <reports>
-                            <report>javadoc</report>
-                          </reports>
-                        </reportSet>
-                      </reportSets>
+                      <aggregate>true</aggregate>
+                      <detectLinks>false</detectLinks>
+                      <detectOfflineLinks>true</detectOfflineLinks>
                     </configuration>
+                    <reportSets>
+                      <reportSet>
+                        <id>html</id>
+                        <reports>
+                          <report>javadoc</report>
+                        </reports>
+                      </reportSet>
+                    </reportSets>
                   </plugin>
                 </reportPlugins>
               </configuration>
