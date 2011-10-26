@@ -1,0 +1,21 @@
+<document xmlns="http://maven.apache.org/changes/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+  <properties>
+    <title>SBForge parent pom</title>
+    <author email="mss@statsbiblioteket.dk">Mikis Seth Sørensen</author>
+  </properties>
+  <body>
+    <release version="9" date="2011-10-26" description="Further consolidation">
+      <action dev="mikis" type="add">
+        Added 'sbforge-nexus' as active profile to settings.xml.
+      </action>
+      <action dev="mikis" type="add">
+        Added settings file to project as these are closely linked to the parent pom content.
+      </action>
+      <action dev="mikis" type="remove">
+        Remove the SBForge repository definitions from the pom. These must now be activated though the settings.
+      </action>
+    </release>
+  </body>
+</document>

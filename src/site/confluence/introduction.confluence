@@ -1,0 +1,12 @@
+h3. The SBForge parent pom
+
+The SBForge parent pom contaings definitions for integrating Maven projects into the SBForge infrastructure.
+
+This includes:
+* Distribution management definition
+* Release definitions
+* Reporting definitions.
+
+h3. Settings 
+
+The parent pom is depends on a suitable settings.xml configuration and a template settings.xml is therefore included in this project.
