@@ -5,7 +5,12 @@
     <title>SBForge parent pom</title>
     <author email="mss@statsbiblioteket.dk">Mikis Seth Sørensen</author>
   </properties>
-  <body>
+  <body><release version="10" date="2011-11-02" description="https://sbforge.org/jira/browse/TOOL-71 work around to 
+  enable multi module project releases">
+      <action dev="Mikis" type="remove">
+        Removed the site distribution section of the pom.
+      </action>
+    </release>
     <release version="9" date="2011-10-26" description="
     Note that that from now on the SBForge repository are not defined in the sbforge-parent pom. This means that the 
     sbforge repositories needs to be defined in project pom itself. An alternativ for Maven2 users are to define 
