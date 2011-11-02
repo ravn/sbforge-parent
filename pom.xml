@@ -3,9 +3,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>dk.statsbiblioteket.doms</groupId>
+  <groupId>org.sbforge</groupId>
   <artifactId>sbforge-parent</artifactId>
-  <version>9</version>
+  <version>10-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>SBForge Uber POM</name>
@@ -16,20 +16,21 @@
   <distributionManagement>
     <repository>
       <id>sbforge-nexus</id>
-      <name>SBForgeb Nexus Repo manager</name>
+      <name>SBForge Nexus Repo manager</name>
       <url>https://sbforge.org/nexus/content/repositories/releases</url>
     </repository>
     <snapshotRepository>
       <id>sbforge-nexus</id>
-      <name>SBForgeb Nexus Repo manager</name>
+      <name>SBForge Nexus Repo manager</name>
       <url>https://sbforge.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
     <!-- This needs to be overridden in projects with subproject, where the (sub)projects typically will be deployed to a 
       common site url based on the parent projects artifactId -->
-    <site>
+  <!--   <site>
       <id>sbforge-nexus</id>
-      <url>dav:https://sbforge.org/maven/${project.artifactId}/sites/${project.version}</url>
-    </site>
+      <name>SBForge Maven site</name>
+      <url>${project.site.location}</url>
+    </site> -->
   </distributionManagement>
 
   <scm>
@@ -43,6 +44,15 @@
   </issueManagement>
 
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>2.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <extensions>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
@@ -174,6 +184,5 @@
   </profiles>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
 </project>

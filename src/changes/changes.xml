@@ -6,15 +6,23 @@
     <author email="mss@statsbiblioteket.dk">Mikis Seth Sørensen</author>
   </properties>
   <body>
-    <release version="9" date="2011-10-26" description="Further consolidation">
-      <action dev="mikis" type="add">
+    <release version="9" date="2011-10-26" description="
+    Note that that from now on the SBForge repository are not defined in the sbforge-parent pom. This means that the 
+    sbforge repositories needs to be defined in project pom itself. An alternativ for Maven2 users are to define 
+    the repositories in the settings.xml. See newest 
+    settings.xml template https://sbforge.org/svn/sbforge-parent/trunk/src/main/resources/settings.xml for example">
+      <action dev="Mikis" type="update">
+        Requires Maven 3 to build the Maven site.
+      </action>
+      <action dev="Mikis" type="add">
         Added 'sbforge-nexus' as active profile to settings.xml.
       </action>
-      <action dev="mikis" type="add">
+      <action dev="Mikis" type="add">
         Added settings file to project as these are closely linked to the parent pom content.
       </action>
-      <action dev="mikis" type="remove">
-        Remove the SBForge repository definitions from the pom. These must now be activated though the settings.
+      <action dev="Mikis" type="remove">
+        Remove the SBForge repository definitions from the pom. These must now be defined directly in the project pom 
+        or (in case of using Maven2) be activated though the settings.
       </action>
     </release>
   </body>
