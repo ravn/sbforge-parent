@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.sbforge</groupId>
   <artifactId>sbforge-parent</artifactId>
-  <version>11-SNAPSHOT</version>
+  <version>11</version>
 
   <packaging>pom</packaging>
   <name>SBForge Uber POM</name>
@@ -30,8 +29,8 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</connection>
-    <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</developerConnection>
+    <connection>scm:svn:https://sbforge.org/svn/sbforge-parent/tags/sbforge-parent-11</connection>
+    <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/tags/sbforge-parent-11</developerConnection>
   </scm>
 
   <issueManagement>
