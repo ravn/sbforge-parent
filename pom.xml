@@ -4,7 +4,7 @@
 
   <groupId>org.sbforge</groupId>
   <artifactId>sbforge-parent</artifactId>
-  <version>12-SNAPSHOT</version>
+  <version>12</version>
 
   <packaging>pom</packaging>
   <name>SBForge Uber POM</name>
@@ -29,8 +29,8 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</connection>
-    <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/trunk</developerConnection>
+    <connection>scm:svn:https://sbforge.org/svn/sbforge-parent/tags/sbforge-parent-12</connection>
+    <developerConnection>scm:svn:https://sbforge.org/svn/sbforge-parent/tags/sbforge-parent-12</developerConnection>
   </scm>
 
   <issueManagement>
