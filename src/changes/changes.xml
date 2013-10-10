@@ -5,14 +5,20 @@
     <title>SBForge parent pom</title>
   </properties>
   <body>
+    <release version="15" date="2013-10-10">
+      <action dev="Mikis" type="update">
+        Fixed failing site generation and deployment.
+      </action>
+    </release>
+
     <release version="14" date="2013-10-10">
-      <action dev="Mikis" type="add" issue="BITMAG-942">
+      <action dev="Mikis" type="update">
         Added creation of source jar during verify phase to ensure this is used during install and deploy phases.
       </action>
     </release>
 
     <release version="13" date="2013-10-10">
-      <action dev="Mikis" type="add" issue="BITMAG-942">
+      <action dev="Mikis" type="update">
         Migrated to GitHub.
       </action>
     </release>
