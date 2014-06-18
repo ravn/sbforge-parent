@@ -1,0 +1,11 @@
+18
+* Moving Changelog to plain text file at project root.
+
+15
+* Fixed failing site generation and deployment.
+
+14
+*Added creation of source jar during verify phase to ensure this is used during install and deploy phases.
+
+13
+* Migrated to GitHub.
