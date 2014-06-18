@@ -1,5 +1,6 @@
 18
 * Moving Changelog to plain text file at project root.
+* Switching to release-plugin 2.5 to support git 1.8.
 
 15
 * Fixed failing site generation and deployment.
